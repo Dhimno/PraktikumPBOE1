@@ -11,59 +11,62 @@ public class Titik {
     private static int counterTitik = 0;
 
     /***************METHOD***************/
-    // konstruktor untuk membuat titik (0,0)
-    Titik(){
-        absis = 0;
-        ordinat = 0;
+    // Konstruktor untuk membuat titik (0,0)
+    public Titik(){
+        this(0,0);
         counterTitik++;
     }
 
-    // konstruktor untuk membuat dengan nilai absis dan ordinat tertentu 
-    public Titik(double absis, double ordinat){
-        this.absis = absis;
-        this.ordinat = ordinat;
+    // Konstruktor untuk membuat dengan nilai absis dan ordinat tertentu 
+    public Titik(double x, double y){
+        this.absis = x;
+        this.ordinat = y;
         counterTitik++;
     }
 
-    // mengembalikan nilai absis
-    double getAbsis(){
+    // Mengembalikan nilai absis
+    public double getAbsis(){
         return absis;
     }
 
-    // mengembalikan nilai ordinat
-    double getOrdinat(){
+    // Mengembalikan nilai ordinat
+    public double getOrdinat(){
         return ordinat;
     }
 
-    // mengeset absis titik dengan nilai baru x
-    void setAbsis(double x){
+    // Mengganti nilai absis dengan nilai x
+    public void setAbsis(double x){
         absis = x;
     }
 
-    // mengeset ordinat titik dengan nilai baru y
-    void setOrdinat(double y){
+    // Mengganti nilai ordinat dengan nilai x
+    public void setOrdinat(double y){
         ordinat = y;
     }
 
-    // menggeser nilai absis dan ordinat titik masing-masing sejauh x dan y
-    void geser(double x, double y){
+    // Menggeser nilai absis dan ordinat sebesar x dan y
+    public void geser(double x, double y){
         absis = absis + x;
         ordinat = ordinat + y;
     }
 
-    // mencetak koordinat titik
-    void printTitik(){
+    // Mencetak titik
+    public void printTitik(){
         System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
 
-
     // mengembalikan nilai counterTitik
-    static int getCounterTitik(){
+    public static int getCounterTitik(){
         return counterTitik;
     }
 
-    // menentukan kuadran
-    int getKuadran(){
+    // Mencetak counterTitik
+    public void printCounterTitik(){
+        System.out.println(this.counterTitik);
+    }   
+
+    // Menentukan kuadran dari sebuah titik
+    public int getKuadran(){
         if(absis > 0 && ordinat > 0) return 1;
         if(absis < 0 && ordinat > 0) return 2;
         if(absis < 0 && ordinat < 0) return 3;
@@ -71,45 +74,35 @@ public class Titik {
         return 0; // jika di sumbu
     }
 
-    // jarak ke pusat (0,0)
-    double getJarakPusat(){
+    // Menghitung jarak titik ke pusat (0,0)
+    public double getJarakPusat(){
         return Math.sqrt(absis*absis + ordinat*ordinat);
     }
 
-    // jarak ke titik lain
-    double getJarak(Titik T){
+    // Menghitung jarak titik ke titik yang lain
+    public double getJarak(Titik T){
         double dx = absis - T.absis;
         double dy = ordinat - T.ordinat;
         return Math.sqrt(dx*dx + dy*dy);
     }
 
-    // refleksi terhadap sumbu X (ubah objek ini)
-    void refleksiX(){
+    // Merefleksi titik terhadap sumbu X
+    public void refleksiX(){
         ordinat = -ordinat;
     }
 
-    // refleksi terhadap sumbu Y (ubah objek ini)
-    void refleksiY(){
+    // Merefleksi titik terhadap sumbu Y
+    public void refleksiY(){
         absis = -absis;
     }
 
-    // menghasilkan titik baru hasil refleksi sumbu X
-    Titik getRefleksiX(){
+    // Membuat titik baru berdasarkan refleksi dari sumbu X
+    public Titik getRefleksiX(){
         return new Titik(absis, -ordinat);
     }
 
-    // menghasilkan titik baru hasil refleksi sumbu Y
-    Titik getRefleksiY(){
+    // Membuat titik baru berdasarkan refleksi dari sumbu Y
+    public Titik getRefleksiY(){
         return new Titik(-absis, ordinat);
     }
-    
-    // // konstruktor untuk membuat titik (0,0)
-    // Titik(){
-    //     this(0,0);
-    // }
-    
-    // void printCounterTitik(){
-    //     System.out.println(this.counterTitik);
-    // }
-
-} // end class Titik
+} 
