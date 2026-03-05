@@ -1,3 +1,9 @@
+/* Nama File    : MDosen.java
+ * Deskripsi    : berisi program utama untuk menggunakan class MDosen
+ * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
+ * Tanggal      : Kamis, 5 Maret 2026
+ */
+
 public class MDosen {
     public static void main(String[] args) {
         Dosen D1 = new Dosen();

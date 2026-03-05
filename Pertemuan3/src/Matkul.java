@@ -1,21 +1,24 @@
+/* Nama File    : Matkul.java
+ * Deskripsi    : berisi atribut dan method dalam class Matkul
+ * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
+ * Tanggal      : Kamis, 5 Maret 2026
+ */
+
 public class Matkul {
     private String idMatkul;
     private String Nama;
     private int sks;
-    private static int counterMatkul;
 
     /* Class */
 
     public Matkul(){
-        this("0", "Placeholder", 0);
-        counterMatkul++;
+        this("", "", 0);
     }
 
     public Matkul(String idMatkul, String Nama, int sks){
         this.idMatkul = idMatkul;
         this.Nama = Nama;
         this.sks = sks;
-        counterMatkul++;
     }
 
     /* Getter */
@@ -28,17 +31,13 @@ public class Matkul {
         return Nama;
     }
 
-    public int sks(){
+    public int getsks(){
         return sks;
-    }
-
-    public static int getCounterMatkul(){
-        return counterMatkul;
     }
 
     /* Mutator */
 
-    public void setID(String idMatkul){
+    public void setIDMatkul(String idMatkul){
         this.idMatkul = idMatkul;
     }
 
