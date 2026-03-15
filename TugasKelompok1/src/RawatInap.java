@@ -1,0 +1,50 @@
+class RawatInap extends Rawat {
+    private Ruang ruang;
+    private String waktuMasuk, waktuKeluar;
+
+    public RawatInap() { 
+        super(); 
+        this.ruang = new Ruang(); 
+        this.waktuMasuk = ""; 
+        this.waktuKeluar = ""; 
+    }
+
+    public RawatInap(int id, String kode, String keluhan, Pasien pasien, Ruang ruang, String waktuMasuk, String waktuKeluar) {
+        super(id, kode, keluhan, pasien);
+        this.ruang = ruang;
+        this.waktuMasuk = waktuMasuk;
+        this.waktuKeluar = waktuKeluar;
+    }
+
+    public Ruang getRuang() { 
+        return ruang; 
+    }
+    public void setRuang(Ruang ruang) { 
+        this.ruang = ruang; 
+    }
+    
+    public String getWaktuMasuk() { 
+        return waktuMasuk; 
+    }
+
+    public void setWaktuMasuk(String waktuMasuk) { 
+        this.waktuMasuk = waktuMasuk; 
+    }
+
+    public String getWaktuKeluar() { 
+        return waktuKeluar; 
+    }
+
+    public void setWaktuKeluar(String waktuKeluar) { 
+        this.waktuKeluar = waktuKeluar; 
+    }
+
+    @Override 
+    public void printInfo() {
+        System.out.println("--- JENIS: RAWAT INAP ---");
+        super.printInfo();
+        System.out.println("Waktu Masuk: " + waktuMasuk);
+        System.out.println("Waktu Keluar: " + waktuKeluar);
+        ruang.printInfo();
+    }
+}
