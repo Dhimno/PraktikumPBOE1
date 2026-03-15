@@ -1,5 +1,5 @@
 /* File: Dokter.java */
-public class Dokter extends Person {
+public class Dokter extends Orang {
     protected String kode, jenisKelamin, telpon, alamat, spesialisasi;
 
     public Dokter() {

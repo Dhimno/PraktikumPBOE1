@@ -1,12 +1,12 @@
-public class PersonTest {
+public class TestOrang {
     public static void main(String[] args) {
         System.out.println("=== PERSON TEST ===");
 
         Dokter dokter = new Dokter(10, "D010", "Dr. Ika", "Perempuan", "081234567890", "Jl. Kesehatan 9", "Umum");
         Perawat perawat = new Perawat(20, "Sinta");
 
-        Person p1 = dokter;
-        Person p2 = perawat;
+        Orang p1 = dokter;
+        Orang p2 = perawat;
 
         System.out.println("- Person p1 role: " + p1.getRole());
         p1.printInfo();

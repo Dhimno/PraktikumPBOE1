@@ -1,5 +1,5 @@
 /* File: Perawat.java */
-public class Perawat extends Person {
+public class Perawat extends Orang {
     public Perawat() {
         super(0, "Perawat Default");
     }
