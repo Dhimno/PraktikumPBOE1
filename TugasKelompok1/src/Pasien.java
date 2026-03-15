@@ -7,6 +7,10 @@ public class Pasien {
         this(0, "", "", "", "", "", "", "", "", "", ""); 
     }
     public Pasien(int id, String kode, String nama, String jenisKelamin, String pekerjaan, String tempatLahir, String tanggalLahir, String telpon, String alamat, String tanggalDaftar, String keluhan) {
+        if (kode == null || kode.isBlank()) {
+            throw new IllegalArgumentException("Kode pasien tidak boleh kosong");
+        }
+        assert keluhan != null : "Keluhan harus diisi";
         this.id = id; 
         this.kode = kode; 
         this.nama = nama; 

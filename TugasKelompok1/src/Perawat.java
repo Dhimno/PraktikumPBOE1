@@ -1,31 +1,20 @@
 /* File: Perawat.java */
-public class Perawat {
-    protected int id;
-    protected String nama;
-    public Perawat() { 
-        this(0, ""); 
-    }
-    public Perawat(int id, String nama) { 
-        this.id = id; 
-        this.nama = nama; 
+public class Perawat extends Person {
+    public Perawat() {
+        super(0, "Perawat Default");
     }
 
-    public int getId() { 
-        return id; 
+    public Perawat(int id, String nama) {
+        super(id, nama);
     }
 
-    public void setId(int id) { 
-        this.id = id; 
+    @Override
+    public String getRole() {
+        return "Perawat";
     }
 
-    public String getNama() { 
-        return nama; 
-    }
-    public void setNama(String nama) { 
-        this.nama = nama; 
-    }
-    public void printInfo() { 
-        System.out.println("Nama: " + nama); 
-        System.out.println("ID: " + id);
+    @Override
+    public void printInfo() {
+        System.out.println("PERAWAT: " + nama + " (ID: " + id + ")");
     }
 }

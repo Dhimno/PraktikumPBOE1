@@ -8,8 +8,12 @@ public class Rawat {
         this(0, "", new Pasien()); 
     }
     public Rawat(int id, String kode, Pasien pasien) {
-        this.id = id; 
-        this.kode = kode; 
+        assert pasien != null : "Pasien tidak boleh null";
+        if (kode == null || kode.isBlank()) {
+            throw new IllegalArgumentException("Kode rawat tidak boleh kosong");
+        }
+        this.id = id;
+        this.kode = kode;
         this.pasien = pasien;
     }
 
