@@ -15,6 +15,22 @@ class PerawatTetap extends Perawat {
         this.gajiPokok = gajiPokok;
     }
 
+    public String getNip() { 
+        return nip; 
+    }
+
+    public void setNip(String nip) { 
+        this.nip = nip; 
+    }
+
+    public double getGajiPokok() { 
+        return gajiPokok; 
+    }
+
+    public void setGajiPokok(double gajiPokok) { 
+        this.gajiPokok = gajiPokok; 
+    }
+
     @Override 
     public void printInfo() { 
         super.printInfo(); 
