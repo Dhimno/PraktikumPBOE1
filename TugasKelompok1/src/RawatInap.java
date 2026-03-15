@@ -9,8 +9,8 @@ class RawatInap extends Rawat {
         this.waktuKeluar = ""; 
     }
 
-    public RawatInap(int id, String kode, String keluhan, Pasien pasien, Ruang ruang, String waktuMasuk, String waktuKeluar) {
-        super(id, kode, keluhan, pasien);
+    public RawatInap(int id, String kode, Pasien pasien, Ruang ruang, String waktuMasuk, String waktuKeluar) {
+        super(id, kode, pasien);
         this.ruang = ruang;
         this.waktuMasuk = waktuMasuk;
         this.waktuKeluar = waktuKeluar;

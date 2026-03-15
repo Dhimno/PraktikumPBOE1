@@ -1,16 +1,15 @@
 /* File: Rawat.java */
 public class Rawat {
     protected int id;
-    protected String kode, keluhan;
+    protected String kode;
     protected Pasien pasien;
 
     public Rawat() { 
-        this(0, "", "", new Pasien()); 
+        this(0, "", new Pasien()); 
     }
-    public Rawat(int id, String kode, String keluhan, Pasien pasien) {
+    public Rawat(int id, String kode, Pasien pasien) {
         this.id = id; 
         this.kode = kode; 
-        this.keluhan = keluhan; 
         this.pasien = pasien;
     }
 
@@ -30,14 +29,6 @@ public class Rawat {
         this.kode = kode; 
     }
 
-    public String getKeluhan() { 
-        return keluhan; 
-    }
-
-    public void setKeluhan(String keluhan) { 
-        this.keluhan = keluhan; 
-    }
-
     public Pasien getPasien() { 
         return pasien; 
     }
@@ -48,7 +39,7 @@ public class Rawat {
     public void printInfo() {
         System.out.println("ID Pasien: " + pasien.getId());
         System.out.println("KODE LAYANAN: " + kode);
-        System.out.println("Keluhan: " + keluhan);
+        System.out.println("Keluhan: " + pasien.getKeluhan());
         pasien.printInfo();
     }
 }

@@ -9,8 +9,8 @@ class RawatJalan extends Rawat {
         this.resep = ""; 
     }
 
-    public RawatJalan(int id, String kode, String keluhan, Pasien pasien, Dokter dokter, String diagnosis, String resep, String tanggal) {
-        super(id, kode, keluhan, pasien);
+    public RawatJalan(int id, String kode, Pasien pasien, Dokter dokter, String diagnosis, String resep, String tanggal) {
+        super(id, kode, pasien);
         this.dokter = dokter;
         this.diagnosis = diagnosis;
         this.resep = resep;

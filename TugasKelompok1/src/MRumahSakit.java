@@ -17,13 +17,13 @@ public class MRumahSakit {
         System.out.println();
 
         // Pasien Rawat Inap
-        Pasien pasienInap = new Pasien(201, "P001", "Eka", "Laki-laki", "PNS", "Jakarta", "01-01-2000", "08111111111", "Jakarta", "01-03-2026");
+        Pasien pasienInap = new Pasien(201, "P001", "Eka", "Laki-laki", "PNS", "Jakarta", "01-01-2000", "08111111111", "Jakarta", "01-03-2026", "Demam tinggi dan dehidrasi");
         Ruang ruang = new Ruang(1, "R-101", 101, 3);
-        RawatInap rawatInap = new RawatInap(301, "RI001", "Demam tinggi dan dehidrasi", pasienInap, ruang, "05-03-2026", "10-03-2026");
+        RawatInap rawatInap = new RawatInap(301, "RI001", pasienInap, ruang, "05-03-2026", "10-03-2026");
 
         // Pasien Rawat Jalan
-        Pasien pasienJalan = new Pasien(202, "P002", "Budi", "Laki-laki", "Karyawan Swasta", "Bandung", "02-02-1995", "08222222222", "Bandung", "02-03-2026");
-        RawatJalan rawatJalan = new RawatJalan(302, "RJ001", "Batuk pilek", pasienJalan, dokterTetap, "Infeksi Saluran Pernafasan Atas", "Paracetamol 500mg", "03-03-2026");
+        Pasien pasienJalan = new Pasien(202, "P002", "Budi", "Laki-laki", "Karyawan Swasta", "Bandung", "02-02-1995", "08222222222", "Bandung", "02-03-2026", "Batuk pilek");
+        RawatJalan rawatJalan = new RawatJalan(302, "RJ001", pasienJalan, dokterTetap, "Infeksi Saluran Pernafasan Atas", "Paracetamol 500mg", "03-03-2026");
 
         // Rekam medis untuk rawat inap
         RekamMedis rmInap = new RekamMedis(401, rawatInap, dokterMitra, perawatTetap, "Demam akibat infeksi virus", "Paracetamol, Cairan IV", "06-03-2026");
