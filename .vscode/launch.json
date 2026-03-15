@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "MPegawai",
+      "request": "launch",
+      "mainClass": "MPegawai",
+      "projectName": "PraktikumPBOE1_d966e00e"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/dhimno/Documents/PraktikumPBOE1",
+      "program": "/Users/dhimno/Documents/PraktikumPBOE1/build/Debug/outDebug"
+    }
+  ]
+}

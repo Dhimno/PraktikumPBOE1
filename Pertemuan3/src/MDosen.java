@@ -6,7 +6,7 @@
 
 public class MDosen {
     public static void main(String[] args) {
-        Dosen D1 = new Dosen();
+        Dosen1 D1 = new Dosen1();
         D1.printDosen();
         D1.setNIP("24060124120026");
         D1.setNama("Gregorious Septi");

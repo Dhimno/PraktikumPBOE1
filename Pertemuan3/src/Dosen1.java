@@ -3,16 +3,16 @@
  * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
  * Tanggal      : Kamis, 5 Maret 2026
  */
-public class Dosen {
+public class Dosen1 {
     private String NIP;
     private String Nama;
     private String Prodi;
 
-    public Dosen() {
+    public Dosen1() {
         this("", "", "");
     }
     
-    public Dosen(String NIP, String Nama, String Prodi){
+    public Dosen1(String NIP, String Nama, String Prodi){
         this.NIP = NIP;
         this.Nama = Nama;
         this.Prodi = Prodi;

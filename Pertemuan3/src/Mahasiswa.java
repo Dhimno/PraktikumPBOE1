@@ -10,7 +10,7 @@ public class Mahasiswa {
     private String Nama;
     private String Prodi;
     ArrayList<Matkul> listMatkul;
-    private Dosen dosenWali;
+    private Dosen1 dosenWali;
     private Kendaraan kendaraan;
 
     public Mahasiswa(){
@@ -53,11 +53,11 @@ public class Mahasiswa {
         this.listMatkul = listMatkul;
     }
 
-    public Dosen getDosen(){
+    public Dosen1 getDosen(){
         return dosenWali;
     }
 
-    public void setDosenWali(Dosen dosenWali){
+    public void setDosenWali(Dosen1 dosenWali){
         this.dosenWali = dosenWali;
     }
 

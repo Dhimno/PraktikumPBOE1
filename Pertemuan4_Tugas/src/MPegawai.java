@@ -1,0 +1,44 @@
+/* Nama File    : MPegawai.java
+ * Deskripsi    : program utama untuk menguji class Pegawai, Dosen, DosenTamu, DosenTetap, Tendik
+ * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
+ * Tanggal      : 15 Maret 2026
+ */
+
+public class MPegawai {
+    public static void main(String[] args) {
+        DosenTamu dtamu = new DosenTamu("D001", "Prof. Tio", "01-01-1980", "01-09-2024", 12000000.0, "Informatika", "NIDK123");
+        DosenTetap dtetap = new DosenTetap("D002", "Dr. Farhan", "02-02-1978", "01-09-2020", 15000000.0, "Teknik", "NIDN987", 5000000.0);
+        Tendik tendik = new Tendik("T001", "Ibu Megawati", "05-03-1985", "01-09-2019", 7000000.0, "Administrasi", 1500000.0);
+
+        System.out.println("=== Dosen Tamu ===");
+        dtamu.printLaporan();
+        System.out.println("NIP         : " + dtamu.getNIP());
+        System.out.println("Nama        : " + dtamu.getNama());
+        System.out.println("Fakultas    : " + dtamu.getFakultas());
+        System.out.println("Gaji Pokok  : " + dtamu.getGajiPokok());
+        System.out.println("Tunjangan   : " + dtamu.getTunjangan());
+        System.out.println("Total Gaji  : " + (dtamu.getGajiPokok() + dtamu.getTunjangan()));
+        System.out.println();
+
+        System.out.println("=== Dosen Tetap ===");
+        dtetap.printLaporan();
+        System.out.println("NIP         : " + dtetap.getNIP());
+        System.out.println("Nama        : " + dtetap.getNama());
+        System.out.println("Fakultas    : " + dtetap.getFakultas());
+        System.out.println("Gaji Pokok  : " + dtetap.getGajiPokok());
+        System.out.println("BUP         : " + dtetap.getBUP());
+        System.out.println("Tunjangan   : " + dtetap.getTunjangan());
+        System.out.println("Total Gaji  : " + (dtetap.getGajiPokok() + dtetap.getTunjangan()));
+        System.out.println();
+
+        System.out.println("=== Tenaga Pendidikan ===");
+        tendik.printLaporan();
+        System.out.println("NIP         : " + tendik.getNIP());
+        System.out.println("Nama        : " + tendik.getNama());
+        System.out.println("Bidang      : " + tendik.getBidang());
+        System.out.println("Gaji Pokok  : " + tendik.getGajiPokok());
+        System.out.println("Tunjangan   : " + tendik.getTunjangan());
+        System.out.println("Total Gaji  : " + (tendik.getGajiPokok() + tendik.getTunjangan()));
+    }
+}
+
