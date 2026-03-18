@@ -29,7 +29,14 @@ public class DosenTetap extends Dosen {
         this.BUP = BUP; 
     }
 
-    public double getTunjangan() {
-        return 0.75 * getGajiPokok(); /* 75% dari gaji pokok */
+    public double getTunjangan(int tahunTMT){
+        return 0.02 * getHitungMasaKerja(tahunTMT) * getGajiPokok();
+    }
+
+    @Override
+    public void printInfo(){
+        super.printInfo();
+        System.out.println("NIDN Dosen Tetap : " + NIDN);
+        System.out.println("BUP Dosen Tetap : " + BUP);
     }
 }

@@ -28,8 +28,15 @@ public class Tendik extends Pegawai {
     public void setBUP(double BUP) { 
         this.BUP = BUP; 
     }
-
-    public double getTunjangan() {
-        return 1500000.0;
+    public double getTunjangan(int tahunTMT){
+        return 0.01 * getHitungMasaKerja(tahunTMT) * getGajiPokok();
     }
+
+    @Override
+    public void printInfo(){
+        super.printInfo();
+        System.out.println("Bidang Tendik : " + Bidang);
+        System.out.println("BUP Tendik : " + BUP);
+    }
+
 }

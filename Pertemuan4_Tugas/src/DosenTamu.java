@@ -22,4 +22,11 @@ public class DosenTamu extends Dosen {
     public double getTunjangan() {
         return 0.15 * getGajiPokok(); /* 15% dari gaji pokok */
     }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("NIDK Dosen Tamu : " + NIDK);
+        System.out.println("Tunjangan Dosen Tamu : " + getTunjangan());
+    }
 }

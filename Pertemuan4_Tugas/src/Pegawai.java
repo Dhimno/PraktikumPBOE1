@@ -55,7 +55,14 @@ public class Pegawai {
         this.GajiPokok = GajiPokok; 
     }
 
-    public void printLaporan() {
-        System.out.println("Laporan Pegawai: " + Nama + " (" + NIP + ")");
+    public int getHitungMasaKerja(int tahunTMT){
+        return 2026 - tahunTMT;
+    }
+    public void printInfo() {
+        System.out.println("Nama Pegawai: " + Nama);
+        System.out.println("NIP Pegawai: " + NIP);
+        System.out.println("Tanggal Lahir Pegawai: " + TanggalLahir);
+        System.out.println("TMT Pegawai: " + TMT);
+        System.out.println("Gaji Pokok Pegawai: " + GajiPokok);
     }
 }

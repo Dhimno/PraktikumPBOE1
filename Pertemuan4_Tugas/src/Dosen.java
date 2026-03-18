@@ -18,4 +18,9 @@ public class Dosen extends Pegawai {
     public void setFakultas(String Fakultas) { 
         this.Fakultas = Fakultas; 
     }
+   @Override
+    public void printInfo(){
+        super.printInfo();
+        System.out.println("Fakultas Dosen : " + Fakultas);
+    }
 }
