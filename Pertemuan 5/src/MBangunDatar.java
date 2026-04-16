@@ -8,7 +8,7 @@ public class MBangunDatar {
     public static void main(String[] args) {
         // membuat objek persegi dan lingkaran
         Persegi p = new Persegi(4, "Merah", "Hitam");
-        Lingkaran l = new Lingkaran(14, "Biru", "Biru", "Putih");
+        Lingkaran l = new Lingkaran(14.0, "Biru", "Biru", "Putih");
 
         System.out.println("=== INFO PERSEGI ===");
         p.printInfo();
@@ -20,7 +20,7 @@ public class MBangunDatar {
         l.printInfo();
         System.out.println("Luas Lingkaran: " + l.getLuas());
         System.out.println("Keliling Lingkaran: " + l.getKeliling());
-        System.out.println("Diameter Lingkaran: " + l.Diagonal());
+        System.out.println("Diameter Lingkaran: " + l.getDiameter());
 
         System.out.println("\n=== OPERASI ZOOM ===");
         p.zoomIn();

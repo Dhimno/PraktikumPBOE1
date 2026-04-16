@@ -1,3 +1,8 @@
+/* Nama File    : MManusia.java
+ * Deskripsi    : Menguji class Manusia sebagai parent dari Pengusaha dan Pekerja
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 19 Maret 2026
+ */
 public class MManusia {
     public static void main(String[] args) {
         Pengusaha p1 = new Pengusaha("Dina", java.time.LocalDate.of(2020, 1, 10), "Jakarta", 5000000, "12.345.678.9-012.345");

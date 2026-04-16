@@ -35,7 +35,7 @@ public class Lingkaran extends BangunDatar implements IResize {
         return 2 * Math.PI * this.jari;
     }
 
-    public double Diagonal(){
+    public double getDiameter(){
         return 2 * this.jari;
     }
 
