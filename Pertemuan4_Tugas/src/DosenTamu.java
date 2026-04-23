@@ -1,4 +1,8 @@
-/* Nama File    : DosenTamu.java */
+/* Nama File    : DosenTamu.java
+ * Deskripsi    : Membuat class DosenTamu sebagai subclass dari Dosen
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 12 Maret 2026
+ */
 public class DosenTamu extends Dosen {
     private String NIDK;
 

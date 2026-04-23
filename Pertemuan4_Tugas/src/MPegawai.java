@@ -1,7 +1,7 @@
 /* Nama File    : MPegawai.java
- * Deskripsi    : program utama untuk menguji class Pegawai, Dosen, DosenTamu, DosenTetap, Tendik
- * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
- * Tanggal      : 15 Maret 2026
+ * Deskripsi    : Membuat class MPegawai untuk menguji class Dosen, DosenTetap, DosenTamu, dan Tendik
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 12 Maret 2026
  */
 
 public class MPegawai {

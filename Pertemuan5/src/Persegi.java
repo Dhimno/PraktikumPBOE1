@@ -1,7 +1,7 @@
 /* Nama File    : Persegi.java
  * Deskripsi    : Membuat class persegi dengan inherit BangunDatar
- * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
- * Tanggal      : Kamis, 16 April 2026
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 19 Maret 2026
  */
 
 public class Persegi extends BangunDatar implements IResize {
@@ -68,4 +68,3 @@ public class Persegi extends BangunDatar implements IResize {
         this.sisi = this.sisi * (percent / 100.0);
     }
 }
-

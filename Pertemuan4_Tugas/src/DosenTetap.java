@@ -1,4 +1,8 @@
-/* Nama File    : DosenTetap.java */
+/* Nama File    : DosenTetap.java
+ * Deskripsi    : Membuat class DosenTetap sebagai subclass dari Dosen
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 12 Maret 2026
+ */
 public class DosenTetap extends Dosen {
     private String NIDN;
     private double BUP;

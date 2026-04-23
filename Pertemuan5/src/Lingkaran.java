@@ -1,7 +1,7 @@
 /* Nama File    : Lingkaran.java
  * Deskripsi    : Membuat class Lingkaran dengan inherit BangunDatar dan implement IResize
- * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
- * Tanggal      : Kamis, 16 April 2026
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 19 Maret 2026
  */
 
 public class Lingkaran extends BangunDatar implements IResize {
@@ -35,7 +35,7 @@ public class Lingkaran extends BangunDatar implements IResize {
         return 2 * Math.PI * this.jari;
     }
 
-    public double Diagonal(){
+    public double getDiameter(){
         return 2 * this.jari;
     }
 

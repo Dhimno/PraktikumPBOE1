@@ -1,4 +1,8 @@
-/* Nama File    : Tendik.java */
+/* Nama File    : Tendik.java
+ * Deskripsi    : Membuat class Tendik sebagai subclass dari Pegawai
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 12 Maret 2026
+ */
 public class Tendik extends Pegawai {
     private String Bidang;
     private double BUP;

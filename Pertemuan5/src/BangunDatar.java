@@ -1,7 +1,7 @@
 /* Nama File    : BangunDatar.java
  * Deskripsi    : Membuat class BangunDatar sebagai parent dari Persegi dan Lingkaran
- * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
- * Tanggal      : Kamis, 16 April 2026
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 19 Maret 2026
  */
 
 public abstract class BangunDatar {
@@ -11,7 +11,7 @@ public abstract class BangunDatar {
     private String border;
     private static int counterBangunDatar = 0;
 
-    // Method
+    //Method
     public BangunDatar() {
         this.jmlSisi = 0;
         this.warna = "";

@@ -1,4 +1,8 @@
-/* Nama File    : Dosen.java */
+/* Nama File    : Dosen.java
+ * Deskripsi    : Membuat class Dosen sebagai subclass dari Pegawai
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 12 Maret 2026
+ */
 public class Dosen extends Pegawai {
     private String Fakultas;
 

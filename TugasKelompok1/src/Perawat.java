@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 /* Anggota Kelompok 5: */
 /* Gregorius Septiano Ariadi (24060124120026) */
 /* Fadhil Yaafi Widodo (24060124140169) */
@@ -8,7 +6,6 @@
 /* Farhan Dwiyan Akbar (24060124140137) */
 /* Kelas: E */
 
->>>>>>> Stashed changes
 /* File: Perawat.java */
 public class Perawat {
     protected int id;

@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 /* Anggota Kelompok 5: */
 /* Gregorius Septiano Ariadi (24060124120026) */
 /* Fadhil Yaafi Widodo (24060124140169) */
@@ -9,7 +7,6 @@
 /* Kelas: E */
 
 
->>>>>>> Stashed changes
 class PerawatTetap extends Perawat {
     private String nip;
     private double gajiPokok;

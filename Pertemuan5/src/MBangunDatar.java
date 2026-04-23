@@ -1,47 +1,36 @@
 /* Nama File    : MBangunDatar.java
  * Deskripsi    : Membuat class MBangunDatar untuk menguji class Persegi dan Lingkaran
- * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
- * Tanggal      : Kamis, 16 April 2026
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 19 Maret 2026
  */
 
 public class MBangunDatar {
     public static void main(String[] args) {
-        System.out.println("===== PERSEGI =====");
-        Persegi persegi = new Persegi();
-        persegi.setJmlSisi(4);
-        persegi.setPersegi(5, "Biru", "Tebal");
-        System.out.println("Luas Persegi : " + persegi.getLuas());
-        System.out.println("Keliling Persegi : " + persegi.getKeliling());
-        System.out.println("Diagonal Persegi : " + persegi.getDiagonal());
-        System.out.println("Informasi Persegi : ");
-        System.out.println("================================");
-        persegi.printInfo();
+        // membuat objek persegi dan lingkaran
+        Persegi p = new Persegi(4, "Merah", "Hitam");
+        Lingkaran l = new Lingkaran(14.0, "Biru", "Biru", "Putih");
 
-        System.out.println("\n ===== LINGKARAN =====");
-        Lingkaran lingkaran = new Lingkaran(10, "Merah", "Merah", "Tebal");
-        System.out.println("Luas Lingkaran : " + lingkaran.getLuas());
-        System.out.println("Keliling Lingkaran : " + lingkaran.getKeliling());
-        System.out.println("Diagonal Lingkaran : " + lingkaran.Diagonal());
-        System.out.println("Informasi Lingkaran : ");
-        System.out.println("================================");
-        lingkaran.printInfo();
+        System.out.println("=== INFO PERSEGI ===");
+        p.printInfo();
+        System.out.println("Luas Persegi: " + p.getLuas());
+        System.out.println("Keliling Persegi: " + p.getKeliling());
+        System.out.println("Diagonal Persegi: " + p.getDiagonal());
 
-        System.out.println("\n ===== IMPLEMENTASI ABSTRACT ====="); 
-        // BangunDatar B1 = new BangunDatar(); 
-        BangunDatar P1 = new Persegi(10, "Kuning", "Tebal");
-        Persegi P2 = new Persegi(5, "Hijau", "Tipis");
-        BangunDatar L1 = new Lingkaran(7, "Ungu", "Tebal", "Tebal");
-        Lingkaran L2 = new Lingkaran(14, "Cyan", "Tebal", "Tebal");
-        System.out.println("Luas Persegi P1 : " + P1.getLuas());
-        System.out.println("Luas Persegi P2 : " + P2.getLuas());
-        System.out.println("Luas Lingkaran L1 : " + L1.getLuas());
-        System.out.println("Luas Lingkaran L2 : " + L2.getLuas());
-        System.out.println("Apakah luas P1 sama dengan luas P2? " + P1.isEqualLuas(P2));
-        System.out.println("Apakah luas L1 sama dengan luas L2? " + L1.isEqualLuas(L2));
+        System.out.println("\n=== INFO LINGKARAN ===");
+        l.printInfo();
+        System.out.println("Luas Lingkaran: " + l.getLuas());
+        System.out.println("Keliling Lingkaran: " + l.getKeliling());
+        System.out.println("Diameter Lingkaran: " + l.getDiameter());
 
-        // L1.zoomIn();
-        L2.zoomOut();
-        L2.zoomIn();
-        // L1.getJari();                 
+        System.out.println("\n=== OPERASI ZOOM ===");
+        p.zoomIn();
+        l.zoomOut();
+        System.out.println("Persegi setelah zoom in (sisi +10%): " + p.getSisi());
+        System.out.println("Lingkaran setelah zoom out (jari-jari -10%): " + l.getJari());
+
+        System.out.println("\n=== PERBANDINGAN LUAS ===");
+        System.out.println("Persegi dan Lingkaran sama luas? " + p.isEqualLuas(l));
+
+        BangunDatar.printCounterBangunDatar();
     }
 }

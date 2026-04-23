@@ -1,4 +1,8 @@
-/* Nama File    : Pegawai.java */
+/* Nama File    : Pegawai.java
+ * Deskripsi    : Membuat class Pegawai sebagai parent class
+ * Pembuat      : Dhimas Reza Nafi Wahyudi / 24060124120010
+ * Tanggal      : Kamis, 12 Maret 2026
+ */
 public class Pegawai {
     private String NIP;
     private String Nama;
