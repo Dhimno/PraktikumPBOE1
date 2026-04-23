@@ -3,6 +3,8 @@
  * Pembuat      : Dhimas Reza Nafi Wahyudi/24060124120010
  * Tanggal      : Kamis, 12 Maret 2026
  */
+
+
 public class BangunDatar {
     protected int jmlSisi;
     private String warna;
