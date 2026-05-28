@@ -55,5 +55,24 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.project.sourcePaths": [
+    ".",
+    "IntroTest/test",
+    "PBO07_24060124120010/AdHocOverloading/src",
+    "PBO08_24060124120010/GenerikPadaClass/src",
+    "PBO09_24060124120010/KoleksiKelasBentukan/src",
+    "PBO09_24060124120010/KoleksiKelasDasar/src",
+    "PBO10_24060124120010",
+    "Pertemuan1/src",
+    "Pertemuan2/src",
+    "Pertemuan3/src",
+    "Pertemuan4_Tugas/src",
+    "Pertemuan4/Inheritance/src",
+    "Pertemuan5 - Latihan/src",
+    "Pertemuan5/src",
+    "Pertemuan6/src"
+  ],
+  "java.project.referencedLibraries": []
 }

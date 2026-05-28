@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "GUI",
+      "request": "launch",
+      "mainClass": "com.pbo.prak.GUI",
+      "projectName": "praktikum"
+    },
+    {
+      "type": "java",
       "name": "MPegawai",
       "request": "launch",
       "mainClass": "MPegawai",
